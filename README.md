@@ -6,7 +6,7 @@ A modern, clean macOS SVN client for developers.
 
 ![RelaxSVN main window](docs/images/relaxsvn-main.png)
 
-Keywords: macSVN, mac SVN client, macOS SVN client, Subversion client, SVN desktop client, Electron SVN client.
+Keywords: macSVN, mac SVN client, macOS SVN client, SVN GUI, Subversion GUI, SVN desktop client, Electron SVN client, Cornerstone alternative, Versions alternative, macOS Subversion client, Mac SVN 客户端, macOS SVN 图形客户端, SVN 桌面客户端.
 
 ## Why
 
@@ -47,13 +47,23 @@ RelaxSVN does not bundle SVN or VSCode. It calls the tools installed on your sys
 
 ## Download
 
-Signed and notarized builds are published on the GitHub Releases page.
+Download the latest signed and notarized build from GitHub Releases:
+
+[Download RelaxSVN for macOS](https://github.com/jkopzmm/RelaxSVN/releases/latest)
+
+下载最新版已签名、公证的 macOS 安装包：
+
+[下载 RelaxSVN for macOS](https://github.com/jkopzmm/RelaxSVN/releases/latest)
 
 For Apple Silicon Macs, download:
 
 ```text
 RelaxSVN-0.1.0-arm64.dmg
 ```
+
+Direct DMG link:
+
+[RelaxSVN-0.1.0-arm64.dmg](https://github.com/jkopzmm/RelaxSVN/releases/download/v0.1.0/RelaxSVN-0.1.0-arm64.dmg)
 
 Open the DMG and drag RelaxSVN to Applications.
 

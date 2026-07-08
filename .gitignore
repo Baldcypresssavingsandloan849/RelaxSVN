@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+out/
+dist/
+*.dmg
+*.zip
+*.blockmap
+builder-debug.yml
+
+# Local Electron/macOS artifacts
+*.log
+.DS_Store
+*.asar
+
+# Local QA and scratch output
+.codex-qa/
+.playwright-cli/
+output/
+截图/
+/svn.png
+
+# Secrets and signing material
+*.p12
+*.cer
+*.mobileprovision
+打包信息/
+**/打包信息/
+**/*证书*
+**/*certificate*
+**/*Certificate*
+
+# Environment files
+.env
+.env.*

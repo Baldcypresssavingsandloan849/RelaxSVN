@@ -1,0 +1,83 @@
+{
+  "name": "svn-desktop",
+  "version": "0.1.0",
+  "description": "A focused macOS SVN desktop client for Apple Silicon.",
+  "keywords": [
+    "svn",
+    "subversion",
+    "macsvn",
+    "macos",
+    "electron",
+    "svn-client",
+    "subversion-client",
+    "developer-tools"
+  ],
+  "main": "out/main/index.js",
+  "author": "ww",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkopzmm/RelaxSVN.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkopzmm/RelaxSVN/issues"
+  },
+  "homepage": "https://github.com/jkopzmm/RelaxSVN#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "vue-tsc --noEmit && electron-vite build",
+    "dist": "npm run build && ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ electron-builder --mac --arm64",
+    "typecheck": "vue-tsc --noEmit",
+    "postinstall": "ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ electron-builder install-app-deps",
+    "rebuild:native": "ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@vueuse/core": "^13.5.0",
+    "better-sqlite3": "^11.10.0",
+    "element-plus": "^2.14.2",
+    "fast-xml-parser": "^5.2.5",
+    "lucide-vue-next": "^0.468.0",
+    "pinia": "^2.3.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.10.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "typescript": "^5.7.2",
+    "vue-tsc": "^2.2.0"
+  },
+  "build": {
+    "appId": "com.relaxsvn.desktop",
+    "productName": "RelaxSVN",
+    "asar": true,
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ]
+  }
+}

